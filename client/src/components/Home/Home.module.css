@@ -1,0 +1,123 @@
+.background{
+    background: fixed;
+    background-image: url("../assets/cafeteria.jpg");
+    background-size:cover;
+    background-position: top center;
+    height: 100vh;
+    
+}
+
+.container{
+  background: rgb(26, 26, 26);
+  width: 80%;
+  margin: 0% auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.titles{
+  display: contents;
+  font-style:normal;
+  font-size: small;
+}
+
+.titles h3 {
+  margin: 0 auto 20px;
+  text-align: center;
+  width:50%;
+  color: #777;
+  font-size:1.2em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  
+
+}
+.items{
+ display: flex;
+gap: 10px; /* para separar los titulos entre si  */
+justify-content: center; /* Alinear el contenido al centro horizontal */
+}
+
+.items h4{
+background-color: #6d6c6c;
+border-radius: 8px;
+text-align: center;
+margin: 0;
+width: 150px;
+height: 40px;
+line-height: 40px; /* Centra verticalmente el texto */
+font-family: 'Roboto',sans-serif;
+font-weight: 250; /* para el grosor de letra  */
+margin-bottom: 40px;
+}
+
+.coffe{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ajusta 3 items por columna */
+  
+}
+
+.coffe img{
+  border-radius: 10px;
+}
+
+
+.name {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  min-width: 150px; /* Cambia esto */
+  font-size: 18px; /* Cambia esto */
+  overflow-wrap: break-word; /* Añade esto */
+  text-overflow: ellipsis; /* Añade esto */
+  margin-right: 50px;
+}
+
+.price {
+  display: inline-block;
+  margin: 0 auto 15px;
+  text-align: center;
+  background-color:rgba(189, 249, 229, 0.841); /* Cuadrado celeste claro */
+  padding: 9px 10px; /* Ajusta según sea necesario */
+  color: black;
+  border-radius: 8px;
+  line-height: 10px; /* Centra verticalmente el texto */
+  min-width: 40px; /* Cambia esto */
+  font-size: 15px;
+  height: 10px;
+
+}
+
+.caracteristicas{
+  display: flex;
+ justify-content: flex-start;
+ margin:10%;
+ margin-top: -10px;
+ font-size: small;
+}
+.votos{
+  color: #777;
+}
+
+
+
+.coffe > div {
+  position: relative;
+}
+
+.popular {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  background-color: rgb(244, 199, 86);
+  color: black;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 5px 15px;
+  font-weight:500;
+}
+
+.soldOut{
+ margin-left: 35px;
+ color: rgb(233, 47, 47);
+}
